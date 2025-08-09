@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Customer reviews and testimonials for YourAffiliate.com" />
+  <title>Reviews - YourAffiliate.com</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: #0077ff;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #0077ff;
+    }
+
+    .page-title {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+      font-size: 2rem;
+      color: #0077ff;
+    }
+
+    /* Testimonials section */
+    .testimonials {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .testimonial-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: "“";
+      font-size: 3rem;
+      color: #0077ff;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      opacity: 0.2;
+    }
+    .testimonial-text {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    .testimonial-author {
+      font-weight: bold;
+      color: #0077ff;
+    }
+
+    /* About section */
+    .about-section {
+      background: white;
+      padding: 3rem 2rem;
+      margin: 3rem auto;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    .about-section h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #0077ff;
+    }
+    .about-section p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Fun facts */
+    .fun-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    .fact-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .fact-card h4 {
+      font-size: 2rem;
+      color: #0077ff;
+    }
+    .fact-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: white;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #eee;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YourAffiliate.com</h1>
+    <nav>
+
+    </nav>
+  </header>
+
+  <h2 class="page-title">What People Are Saying</h2>
+
+  <section class="testimonials">
+    <div class="testimonial-card">
+      <p class="testimonial-text">I found the perfect laptop for my needs thanks to YourAffiliate.com. Saved me hours of research and got me the best price!</p>
+      <p class="testimonial-author">— Rohan S.</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">This site is my go-to whenever I need to compare products. The recommendations are spot-on and the deals are amazing!</p>
+      <p class="testimonial-author">— Priya K.</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">Super smooth experience! I love how everything is neatly organized, and I got an awesome smartwatch at a huge discount.</p>
+      <p class="testimonial-author">— Arjun P.</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h3>Why People Trust Us</h3>
+    <p>At YourAffiliate.com, we believe in helping people make smarter buying decisions. Our reviews are honest, unbiased, and based on thorough research. Whether you’re hunting for a gadget, home appliance, or fashion deal — we’ve got your back.</p>
+  </section>
+
+  <section class="fun-facts">
+    <div class="fact-card">
+      <h4>500+</h4>
+      <p>Products Reviewed</p>
+    </div>
+    <div class="fact-card">
+      <h4>95%</h4>
+      <p>Happy Visitors</p>
+    </div>
+    <div class="fact-card">
+      <h4>24/7</h4>
+      <p>Always Updated Deals</p>
+    </div>
+    <div class="fact-card">
+      <h4>100%</h4>
+      <p>Independent & Unbiased</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 YourAffiliate.com. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

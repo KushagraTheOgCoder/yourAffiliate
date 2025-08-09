@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Latest deals and discounts from YourAffiliate.com" />
+  <title>Deals - YourAffiliate.com</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: #0077ff;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #0077ff;
+    }
+
+    .page-title {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+      font-size: 2rem;
+      color: #0077ff;
+    }
+
+    .deals-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .deal-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s;
+    }
+    .deal-card:hover {
+      transform: translateY(-5px);
+    }
+    .deal-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .deal-content {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .deal-title {
+      font-size: 1.2rem;
+      color: #0077ff;
+      margin-bottom: 0.5rem;
+    }
+    .deal-desc {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+    .deal-price {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .btn-shop {
+      display: inline-block;
+      padding: 0.7rem 1.2rem;
+      background: #0077ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    .btn-shop:hover {
+      background: #005fcc;
+    }
+
+    footer {
+      background: white;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #eee;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YourAffiliate.com</h1>
+    <nav>
+      <a href="Index.html">Home</a>
+      <a href="Product.html">Products</a>
+      <a href="Deals.html">Deals</a>
+      <a href="Reviews.html">Reviews</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <h2 class="page-title">Latest Deals & Discounts</h2>
+
+  <section class="deals-container">
+    <div class="deal-card">
+      <img src="data:image/jpeg;base64,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" alt="Product 1" class="deal-img">
+      <div class="deal-content">
+        <h3 class="deal-title">Wireless Headphones</h3>
+        <p class="deal-desc">Experience premium sound quality and noise cancellation at an unbeatable price.</p>
+        <p class="deal-price">Now: $89 <s>$129</s></p>
+        <a href="#" class="btn-shop">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <img src="data:image/jpeg;base64,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" alt="Product 2" class="deal-img">
+      <div class="deal-content">
+        <h3 class="deal-title">Smart Fitness Watch</h3>
+        <p class="deal-desc">Track your workouts, monitor your health, and stay connected on the go.</p>
+        <p class="deal-price">Now: $59 <s>$99</s></p>
+        <a href="#" class="btn-shop">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="deal-card">
+      <img src="data:image/jpeg;base64,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" alt="Product 3" class="deal-img">
+      <div class="deal-content">
+        <h3 class="deal-title">4K Action Camera</h3>
+        <p class="deal-desc">Capture every adventure in stunning 4K resolution with waterproof durability.</p>
+        <p class="deal-price">Now: $149 <s>$199</s></p>
+        <a href="#" class="btn-shop">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 YourAffiliate.com. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
